@@ -8,7 +8,7 @@
 - Delete: Removes entries from the database.
 # Installation
 1. Clone the repository:
-   git clone <repository-url>
+   git clone (https://github.com/git-mahad/post_crud.git)
 2. Navigate to the project directory:
    cd post_crud
 3. Install dependencies:
