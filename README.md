@@ -15,4 +15,4 @@
    npm install   (if you are using Node.js)
 # Usage
 1. Start the application:
-   nest app.js   (for nest.js)
+   nestjs   (for nestjs)
