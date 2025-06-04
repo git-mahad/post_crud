@@ -7,6 +7,8 @@ import { Post as BlogPost } from './entities/post.entity';
 
 @Controller('posts')
 export class PostController {
+// postService will be used in future methods to handle post-related business logic such as creating, retrieving, updating, or deleting posts. 
+// PostService is a service class that contains reusable methods for interacting with the posts data
   constructor(private postService: PostService) {}
  // nestjs internally use body parser, @Body() decorator is used to access the request body (i.e., the data sent by the client in a POST, PUT, or PATCH request
   @HttpPost()
