@@ -7,7 +7,7 @@ import { Post as BlogPost } from './entities/post.entity';
 
 @Controller('posts')
 export class PostController {
-  constructor(@Optional() private postService: PostService) {}
+  constructor(private postService: PostService) {}
 
   @HttpPost()
   create(@Body() post: Omit<BlogPost, 'id'>) {
