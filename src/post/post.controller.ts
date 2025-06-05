@@ -7,7 +7,7 @@ import { Post as BlogPost } from './entities/post.entity';
 
 @Controller('posts')
 export class PostController {
-// postService will be used in future methods to handle post-related business logic such as creating, retrieving, updating, or deleting posts. 
+// postService(injection token) will be used in future methods to handle post-related business logic such as creating, retrieving, updating, or deleting posts. 
 // PostService is a service class that contains reusable methods for interacting with the posts data
   constructor(private postService: PostService) {}
  // nestjs internally use body parser, @Body() decorator is used to access the request body (i.e., the data sent by the client in a POST, PUT, or PATCH request
@@ -15,7 +15,7 @@ export class PostController {
   create(@Body() post: Omit<BlogPost, 'id'>) {
     return this.postService.create(post);
   }
-
+// decorator keep the code clean, understandable, easier to define routes and handling incoming request
   @Get()
   findAll() {
     return this.postService.findAll();
