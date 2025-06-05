@@ -5,6 +5,7 @@ import { Post } from './entities/post.entity';
 
 @Injectable()
 export class PostService {
+  //multiple constructor is not allowed 
   constructor(
     @InjectRepository(Post)
     private postRepository: Repository<Post>,
